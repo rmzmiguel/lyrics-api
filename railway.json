@@ -1,0 +1,10 @@
+{
+  "build": {
+    "env": {
+      "COMPOSER_ALLOW_SUPERUSER": "1"
+    }
+  },
+  "deploy": {
+    "startCommand": "php -S 0.0.0.0:3000 -t public"
+  }
+}
