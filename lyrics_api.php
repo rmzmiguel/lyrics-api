@@ -3,11 +3,12 @@
 // API para la aplicación de letras de canciones
 
 // Configuración de la base de datos
-$host = 'localhost';
+$host = 'trolley.proxy.rlwy.net';
 $db = 'lyrics_app_db';  
 $user = 'root';        
-$password = 'root';    
-$port = 8888;          
+$password = 'aaszmdaiQdpHOzaDkbIpJPvouPYJPkGI';    
+$port = 34484;     
+$dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4"
 
 // Cabeceras para permitir solicitudes desde la app
 header('Content-Type: application/json');
@@ -30,7 +31,7 @@ function logError($message, $data = null) {
 
 // Conectar a la base de datos
 try {
-    $conn = new PDO("mysql:host=$host;port=$port;dbname=$db", $user, $password);
+    $conn = new PDO($dsn, $user, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     logError("Error de conexión a la base de datos: " . $e->getMessage());
