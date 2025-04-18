@@ -1,2 +1,3 @@
 <?php
-require 'lyrics_api.php';
+require_once 'lyrics_api.php';
+
