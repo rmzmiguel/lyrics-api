@@ -1,1 +1,7 @@
-{}
+{
+  "name": "rmzmiguel/lyrics-api",
+  "description": "API para letras de canciones",
+  "require": {
+    "php": ">=7.4"
+  }
+}
