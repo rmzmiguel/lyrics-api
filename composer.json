@@ -1,5 +1,5 @@
 {
   "name": "lyrics-api",
-  "description": "API para gestionar canciones y letras",
+  "description": "API para gestionar letras de canciones",
   "require": {}
 }
