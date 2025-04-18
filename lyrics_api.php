@@ -3,12 +3,13 @@
 // API para la aplicación de letras de canciones
 
 // Configuración de la base de datos
-$host = 'trolley.proxy.rlwy.net';
-$db = 'lyrics_app_db';  
-$user = 'root';        
-$password = 'aaszmdaiQdpHOzaDkbIpJPvouPYJPkGI';    
-$port = 34484;     
-$dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4"
+$host = getenv('DB_HOST');
+$db = "lyrics_app_db"
+$user = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
+$port = getenv('DB_PORT');
+
+$dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4";
 
 // Cabeceras para permitir solicitudes desde la app
 header('Content-Type: application/json');
