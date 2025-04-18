@@ -4,7 +4,7 @@
 
 // Configuración de la base de datos
 $host = getenv('DB_HOST');
-$db = "lyrics_app_db"
+$db = "lyrics_app_db";
 $user = getenv('DB_USER');
 $password = getenv('DB_PASSWORD');
 $port = getenv('DB_PORT');
